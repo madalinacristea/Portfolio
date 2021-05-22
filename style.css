@@ -7,21 +7,19 @@
 }
 
 body{
-    background-color: rgb(132, 0, 255);
+    background-color: black
 }
 /*nav-bar style */
 
 .navbar{
-    position: fixed;
-    width: 100%;
-    background: rgb(128, 0, 117);
-    font-family: 'Ubuntu', sans-serif;
-    padding: 15px 0px;
+    position:fixed;
+    width:100%;
+    background: whitesmoke;
 }
 
 .max-width{
     max-width: 1200px;
-    padding: 0px 80px;
+    padding: 0px 20px;
     margin: auto;
 }
 .navbar .max-width{
@@ -34,19 +32,22 @@ body{
     font-weight: 700;
     
 }
-
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
 .navbar .menu li a{
     display:inline-block;
     font-size: 15px;
     font-weight: 500px;
     margin-left: 25px;
     transition: color 0.3s ease;
+    color:black;
 }
 
 .navbar .menu li a:hover{
-   color: white;
+    color: crimson;
 }
-
 .navbar .max-width{
     display:flex;
     align-items: center;
@@ -57,11 +58,11 @@ body{
 
 .home{
     display: flex;
-    background: url('Images/ProfilePicture.jpg') no-repeat center; /* needs to be changed with a profesional picture */
+    background: url('Images/background4.jpg') no-repeat center; /* needs to be changed with a profesional picture */
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    color: white;
+    color: black;
     min-height: 200px;
     font-family: 'Ubuntu', sans-serif;
 

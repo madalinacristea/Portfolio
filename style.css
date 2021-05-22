@@ -38,11 +38,11 @@ body{
 }
 .navbar .menu li a{
     display:inline-block;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 500px;
     margin-left: 25px;
-    transition: color 0.3s ease;
-    color:black;
+    transition: color 0.4s ease;
+    color:lightskyblue;
 }
 
 .navbar .menu li a:hover{

@@ -219,7 +219,7 @@ section {
 }
 .column-list{
   list-style-type: none;
-  display: inline-block;
+  /*display: inline-block;*/
   margin: 20px 40px;
   margin-top: 0px;  
   font-size: 15px;

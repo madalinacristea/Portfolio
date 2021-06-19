@@ -1,0 +1,2 @@
+(window.__LOADABLE_LOADED_CHUNKS__=window.__LOADABLE_LOADED_CHUNKS__||[]).push([[295],{iL7Q:function(_,n,t){"use strict";t.d(n,"a",(function(){return LoadingBox}));var r=t("wx14"),a=t("yrBZ"),e=t("q1tI"),i=t.n(e);const LoadingBox=_=>i.a.createElement(a.a,Object(r.a)({bg:"gray-100",borderRadius:"2px"},_))}}]);
+//# sourceMappingURL=295.ecddeeb47710407c3b52.chunk.js.map

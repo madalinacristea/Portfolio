@@ -6,24 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Personal Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/730b593729.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <!--Navigation bar section-->
+    <!--Nav bar section-->
+
     <nav class="navbar">
       <div class="max-width">
-        <div class="name"><a href="#">Portfolio</a></div>
-        <div>
-          <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">My projects</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        <div class="name">Portfolio</div>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#">My projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="menu-btn">
+          <i class="fas fa-bars"></i>
         </div>
       </div>
     </nav>
+
     <!--Home section-->
+
     <section class="home" id="home">
       <div class="max-width">
         <div class="home-content">
@@ -33,13 +39,19 @@
         </div>
       </div>
     </section>
+    <script src="script.js"></script>
+
     <!--About me section-->
+
     <section class="about" id="about">
       <div class="max-width">
         <h2 class="title">About me</h2>
         <div class="about-content">
           <div class="column left">
-            <img src="Images/ProfilePicture.jpg" alt="" />
+            <img
+              src="Images/ProfilePicture.jpg"
+              alt=""
+            /><!--the image will be replaced with a professional one-->
           </div>
           <div class="column right">
             <div class="description">
@@ -55,7 +67,76 @@
               veniam est at nesciunt mollitia repudiandae temporibus dolorum
               consequatur animi.
             </p>
-            <a class="cv" href="#">Download my CV</a>
+            <a class="cv" href="CV Madalina Cristea.doc">Download my CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Skills section-->
+    <section class="skills" id="skills">
+      <div class="max-width">
+        <h2 class="title">My skills</h2>
+        <div class="skills-content">
+          <div class="column left">
+            <h3 class="title">Soft skills</h3>
+            <div class="softSkills">
+              <img src="Images/Soft skills.png" />
+              <ul class="column-list">
+                <li>📌Communication</li>
+                <li>📌Self-motivation</li>
+                <li>📌Responsability</li>
+                <li>📌Team-work</li>
+                <li>📌Problem-solving</li>
+                <li>📌Time-management</li>
+                <li>📌Flexibility</li>
+              </ul>
+            </div>
+          </div>
+          <div class="column right">
+            <h3 class="title">Tech skills</h3>
+            <div class="techSkills">
+              <div class="bars">
+                <div class="info">
+                  <span>HTML</span>
+                  <a class="certificate" href="https://www.codecademy.com/profiles/MadalinaCristea/certificates/0595479d03627a8cb816b069000e4d06">View my certificate</a>
+                </div>
+              </div>
+              <div class="bars">
+                <div class="info">
+                  <span>CSS</span>
+                  <a class="certificate" href="https://www.codecademy.com/profiles/MadalinaCristea/certificates/9a5bb1fc45b4281af1fffec93b0aaf05">View my certificate</a>
+                </div>
+              </div>
+              <div class="bars">
+                <div class="info">
+                  <span>Java Script</span>
+                  <a class="certificate" href="">View my certificate</a>
+                </div>
+              </div>
+              <div class="bars">
+                <div class="info">
+                  <span>React</span>
+                  <a class="certificate" href="">View my certificate</a>
+                </div>
+              </div>
+              <div class="bars">
+                <div class="info">
+                  <span>Bootstrap</span>
+                  <a class="certificate" href="https://www.codecademy.com/profiles/MadalinaCristea/certificates/a8ab218d5950c29861635cc0bf12fd13">View my certificate</a>
+                </div>
+              </div>
+              <div class="bars">
+                <div class="info">
+                  <span>Git Hub</span>
+                  <a class="certificate" href="https://www.codecademy.com/profiles/MadalinaCristea/certificates/0595479d03627a8cb816b069000e4d06">View my certificate</a>
+                </div>
+                <div class="info">
+                  <span>Scrum</span>
+                  <a class="certificate" href="">View my certificate</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

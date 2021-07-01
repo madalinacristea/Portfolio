@@ -121,11 +121,12 @@ body {
 }
 
 /*about me section style*/
-section {
-  padding: 50px 0px;
-}
-.about {
+
+.about,
+.skills,
+.projects {
   background: whitesmoke;
+  padding: 50px 0px 150px 0px;
 }
 .about .title {
   font-family: "Ubuntu", sans-serif;
@@ -144,21 +145,21 @@ section {
   width: 230px;
   height: 230px;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 150px;
 }
 .about .about-content .right {
   width: 55%;
   border-style: none;
 }
+
 .about .about-content .right .description {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 15px;
-}
-p {
   text-align: justify;
+  margin-top: 25px;
+  line-height: 28px;
+  font-weight: 400;
+  font-family: "Ubuntu", sans-serif;
 }
-.cv, .htmlCertificate {
+.cv {
   display: inline-block;
   border: 3px solid black;
   border-radius: 4px;
@@ -166,15 +167,14 @@ p {
   color: whitesmoke;
   font-size: 15px;
   padding: 10px 15px;
-  margin-top: 25px;
+  margin-top: 30px;
+  font-family: "Ubuntu", sans-serif;
 }
 .cv:hover {
   color: lightskyblue;
 }
 /*skills section style*/
-section {
-  padding: 50px 0px;
-}
+
 .skills {
   background: whitesmoke;
 }
@@ -182,59 +182,64 @@ section {
   font-family: "Ubuntu", sans-serif;
   text-align: center;
 }
-.max-width .title{
-  margin-bottom: 30px;
-}
+
 .skills .skills-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  margin-top: 50px
 }
-.skills .skills-content .left, .right {
+.skills .skills-content .left,
+.right {
   width: 50%;
   border: 5px;
-  border-style:groove;
   border-color: lightskyblue;
 }
 .skills .skills-content .left .softSkills {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
+  margin-top: 15px;
   text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  /*border: 2px solid lightskyblue;
+  border-radius: 10px;*/
 }
 .skills .skills-content .right .techSkills {
   font-size: 20px;
   font-weight: 400;
   margin-bottom: 15px;
+  margin-top: 15px;
   text-align: center;
+  font-family: "Ubuntu", sans-serif;
+  /*border: 2px solid lightskyblue;
+  border-radius: 10px;*/
 }
-.skills .skills-content .left img {
+.skills .skills-content .left img,
+.right img {
   width: 200px;
   height: 200px;
   object-fit: cover;
   border-radius: 4px;
-  border-top:50px;
-  float: left ;
+  border-top: 50px;
+  float: left;
 }
-.column-list{
+.column-list {
   list-style-type: none;
-  /*display: inline-block;*/
+  display: inline-block;
   margin: 20px 40px;
-  margin-top: 0px;  
+  margin-top: 0px;
   font-size: 15px;
   text-align: left;
-  line-height: 2.2;
-  float: left ;
+  line-height: 2.3;
+  font-family: "Ubuntu", sans-serif;
 }
 .skills .skills-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-.info{
-  font-size: 15px;
 }
 
 .certificate {
@@ -246,25 +251,85 @@ section {
   font-size: 12px;
   padding: 5px 5px;
   margin-top: 5px;
+  font-family: "Ubuntu", sans-serif;
 }
 .certificate:hover {
   color: lightskyblue;
 }
 
-.skills .skills-content .right .info{
-  display:flex;
+.skills .skills-content .right .info {
+  display: flex;
   align-items: center;
   justify-content: space-between;
+  font-size: 15px;
 }
 .skills .skills-content .right .bars {
-  line-height: 1;
+  margin-left: 250px;
 }
 
 .skills .skills-content {
-  display: table; 
-  width: 100%; 
+  display: table;
+  width: 100%;
 }
-.skills .skills-content .left , .skills .skills-content .right {
-  display: table-cell; 
+.skills .skills-content .left,.right {
+  display: table-cell;
+}
+
+/*my projects section styling*/
+
+.projects {
+  background: whitesmoke;
+}
+.projects .title,
+.text {
+  font-family: "Ubuntu", sans-serif;
+  text-align: center;
+  
+}
+.projects .projects-content {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  /*column-gap: 2px;
+  row-gap: 5px;*/
+  align-items: center;
+  margin-top:20px;
+  
+  
+}
+.projects .projects-content .item {
+  display:grid;
+  align-items: center;
+  justify-content: center;
+  background-color: whitesmoke;
+  border: 2px solid lightskyblue;
+  border-radius: 4px;
+  margin-left: 15px;
+  width: 145px;
+  height: 300px;
+}
+.projects .projects-content .item .image {
+  width: 130px;
+  height: 100px;
+  object-fit: cover;
+  margin: 5px 5px;
+  
+}
+.projects .projects-content .item i{
+  color: black;
+}
+.projects .projects-content .item a{
+  font-family: "Ubuntu", sans-serif;
+  color: black;
+  font-size: 10px;
+  font-weight: 800;
+  text-align: justify;
+  line-height: 20px;
+}
+.projects .projects-content .item a:hover{
+  color: lightskyblue;
+}
+.projects .projects-content .item h3, p{
+  font-family: "Ubuntu", sans-serif;
+  font-size: 15px;
   
 }
